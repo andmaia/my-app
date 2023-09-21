@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {axios} from "axios";
+
 import {
   Box,
   Heading,
@@ -35,7 +35,7 @@ function Login() {
     });
   };
 
-  const handleLogin = async () => {
+  /*const handleLogin = async () => {
     
     // Verifique se os campos de email e senha não estão vazios
     if (!formData.email || !formData.password) {
@@ -45,7 +45,7 @@ function Login() {
 
     try {
       // Envie as informações de login para a API e inclua o token no cabeçalho
-      const response = await axios.post(`${apiUrl}/api/user/login`, formData);
+     // const response = await axios.post(`${apiUrl}/api/user/login`, formData);
 
       // A API deve retornar um token se o login for bem-sucedido
       const token = response.data.token;
@@ -65,7 +65,7 @@ function Login() {
       setError("Credenciais inválidas. Tente novamente.");
     }
   };
-
+*/
   return (
     <Container
       display="flex"
@@ -120,7 +120,7 @@ function Login() {
           />
         </FormControl>
 
-        <Button onClick={handleLogin} colorScheme="teal" width="30%" bg={styles.colors.botao}>
+        <Button  colorScheme="teal" width="30%" bg={styles.colors.botao}>
           Entrar
         </Button>
         <Link onClick={() => navigate("/cadastro")}>
