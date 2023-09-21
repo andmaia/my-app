@@ -1,9 +1,9 @@
 import {
-    Box,
-    Radio,
-    RadioGroup,
-    Text,
-    VStack
+  Box,
+  Radio,
+  RadioGroup,
+  Text,
+  VStack
 } from '@chakra-ui/react';
 import React from 'react';
 

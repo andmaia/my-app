@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
 import {
-  Box,
-  Heading,
-  Input,
-  Button,
-  FormControl,
-  FormLabel,
   Alert,
   AlertIcon,
   AlertTitle,
-  theme,
+  Box,
+  Button,
   Container,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input
 } from "@chakra-ui/react";
-import styles from "./styles.js";
-import Menu from "../pages/Menu";
 import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import Menu from "../pages/Menu";
+import styles from "./styles.js";
 
 
 const apiUrl = 'https://iacademy-api.azurewebsites.net';

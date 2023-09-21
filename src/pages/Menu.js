@@ -1,23 +1,16 @@
-import React, { useState, } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  Flex,
-  Text,
-  IconButton,
   Link as ChakraLink,
-  Icon,
-  MenuButton,
-  Menu,
   Divider,
-  Grid,
-  useMediaQuery 
+  Flex,
+  Icon,
+  IconButton,
+  useMediaQuery
 } from '@chakra-ui/react';
+import React from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
-import { BiBook } from 'react-icons/bi';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { useGeralContext } from './context/ContextProvider';
-import { useParams } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function App() {  
   const [isSmOrMd] = useMediaQuery("(max-width: 124rem)");

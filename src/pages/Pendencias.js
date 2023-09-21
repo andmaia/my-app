@@ -1,35 +1,27 @@
 import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons";
 import {
+    AlertDialog,
+    AlertDialogBody,
+    AlertDialogContent,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogOverlay,
     Box,
     Button,
     Checkbox,
     Flex,
-    Modal,
-    ModalBody,
-    ModalContent,
-    ModalOverlay,
     Radio,
     RadioGroup,
     Skeleton,
-    Spinner,
     Text,
     Textarea,
     VStack,
-    AlertDialog,
-    AlertDialogBody,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogContent,
-    AlertDialogOverlay,
-    AlertDialogCloseButton,
-    useDisclosure
+    useDisclosure,
+    useToast
 } from '@chakra-ui/react';
-import { format, set } from 'date-fns';
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import Menu from '../pages/Menu';
+import { useNavigate } from 'react-router-dom';
 import ContextProvider, { useGeralContext } from './context/ContextProvider';
-import { useToast } from '@chakra-ui/react';
 var respostas = {
     "exercises": [
     ]

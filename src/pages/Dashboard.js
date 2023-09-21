@@ -8,30 +8,27 @@ import {
   Flex,
   Grid,
   Heading,
+  Image,
   Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
   Progress,
   Skeleton,
   Stack,
   Text,
   VStack,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
   useDisclosure,
-  Image,
   useMediaQuery
 } from '@chakra-ui/react';
+import { axios } from 'axios';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import Menu from './Menu';
-import axios from 'axios';
-import { AiFillSecurityScan } from 'react-icons/ai';
-import { da } from 'date-fns/locale';
 import ImgC from "../img/csharp_logo.png";
+import Menu from './Menu';
 
 //ContextoApi para poder compartilhar funções entre todos os recursos da minha api
 const DashboardContext = createContext();

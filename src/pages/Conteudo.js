@@ -2,52 +2,32 @@ import { ViewIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
-  Container,
   Divider,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerHeader,
-  DrawerOverlay,
   Flex,
   HStack,
-  Heading,
   IconButton,
   Image,
-  Link,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalOverlay,
   Progress,
   Skeleton,
-  Spinner,
   Text,
   Tooltip,
-  VStack,
-  useDisclosure
+  useToast
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
-import { AiOutlineEdit } from "react-icons/ai";
-import { BiBook, BiHistory } from "react-icons/bi";
-import { BsThreeDotsVertical } from 'react-icons/bs';
+import { AiOutlineDown, AiOutlineEdit } from "react-icons/ai";
+import { BiHistory } from "react-icons/bi";
+import { BsBookHalf } from "react-icons/bs";
+import { FaClipboardList, FaPencilAlt } from 'react-icons/fa';
 import { RiMenuFoldFill } from "react-icons/ri";
-import { AiOutlineDown } from "react-icons/ai"
-import { FaClipboardList } from 'react-icons/fa'
-import { BsBookHalf } from "react-icons/bs"
-import { FaPencilAlt } from "react-icons/fa"
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import imgTeste from '../img/csharp_logo.png';
-import imageCurso from "../img/pythonIcon.png";
+import Pendencias from './Pendencias';
 import ContextProvider, { useGeralContext } from './context/ContextProvider';
-import Pendencias from './Pendencias'
-import { useToast } from '@chakra-ui/react';
 
 const SidebarWrapper = styled.div`
   position: fixed; /* Define a posição fixa */
