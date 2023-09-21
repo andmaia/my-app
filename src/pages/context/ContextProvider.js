@@ -1,5 +1,5 @@
 import React, { useState, useContext, createContext, useEffect } from 'react';
-import {axios} from 'axios';
+import * as axios from 'axios';
 const ContextGeral = createContext();
 
 function ContextProvider({ children }) {

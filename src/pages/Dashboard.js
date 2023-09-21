@@ -24,7 +24,7 @@ import {
   useDisclosure,
   useMediaQuery
 } from '@chakra-ui/react';
-import { axios } from 'axios';
+import * as axios from 'axios';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import ImgC from "../img/csharp_logo.png";

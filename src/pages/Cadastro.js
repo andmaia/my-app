@@ -10,7 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import styles from './styles.js';
-import axios from 'axios';
+import * as axios from 'axios';
 
 
 const apiUrl = 'https://iacademy-api.azurewebsites.net';
